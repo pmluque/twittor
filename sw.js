@@ -7,7 +7,7 @@
 // PWA.7.7 - funciones (sw-utils.js / sw.js)
 //         - si esta instrucción diera error, se edita el .jshintrc
 //         - ... y en globals se añade "importScripts": true 
-importScripts('/js/sw-utils.js');
+importScripts('js/sw-utils.js');
 
 
 // PWA.7.2 - constantes de cache y limites de las mismas
