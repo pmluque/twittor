@@ -20,23 +20,25 @@ const DYNAMIC_CACHE_LIMIT = 100;
 // PWA.7.3 - cargar caches: recorrer aplicación y ver fichero que carga
 // --------- inmutable si son de terceros y no cambian
 // --- ficheros de la aplicación que debe ser cargado rapidamente
+// const APP_SHELL = [
+//    '/',
+
 const APP_SHELL = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/img/favicon.ico',
-    '/img/avatars/spiderman.jpg',
-    '/img/avatars/ironman.jpg',
-    '/img/avatars/wolverine.jpg',
-    '/img/avatars/thor.jpg',
-    '/img/avatars/hulk.jpg',
-    '/js/app.js',
-    '/js/sw-utils.js'
+    'index.html',
+    'css/style.css',
+    'img/favicon.ico',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/ironman.jpg',
+    'img/avatars/wolverine.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/hulk.jpg',
+    'js/app.js',
+    'js/sw-utils.js'
 ];
 
 const APP_INMUTABLE = [
-    '/css/animate.css',
-    '/js/libs/jquery.js',
+    'css/animate.css',
+    'js/libs/jquery.js',
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css'

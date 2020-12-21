@@ -1,6 +1,14 @@
+// PWA.8.3 - GITHUB && GITHUB PAGES : CONTROL DE UBICACIÓN DEL SERVICE WORKER
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
+
 // PWA.7.1 - Registro del SW en el app.js
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+
+    if (url.includes('localhost')) {
+        swLocation = '/sw.js';
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 
 // Referencias de jQuery
